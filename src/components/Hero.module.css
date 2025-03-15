@@ -1,0 +1,9 @@
+.heroContainer{
+background-image: url('../assets/landing-img.jpg');
+height: 600px;
+width: 80%;
+margin: auto;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
