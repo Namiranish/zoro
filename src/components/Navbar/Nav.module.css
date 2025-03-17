@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Lavishly+Yours&family=Outfit:wght@100..900&family=Parisienne&family=Playwrite+DE+VA+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+header{
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.logo{
+  color: #c82125;
+  font-size: 50px;
+}
+
+.navList{
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  /* color: #c82125; */
+  color: #49557e;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+.navList li {
+  padding: 10px 0; 
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 400;
+}
+
+.active {
+  /* padding-bottom: 2px; 
+  border-bottom: 2px solid #49557e; */
+  color: #c82125;
+  font-weight: 700;
+}
+
+.navIcons{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cartIcon{
+  position: relative;
+  top: 3px;
+}
+.cartIcon .dot{
+  position: absolute;
+  min-width: 8px;
+  min-height: 8px;
+  background-color: #c82125;
+  border-radius: 5px;
+  top: -8px;
+  right: -8px;
+}
+.signin{
+background: #c82125;
+font-size: 16px;
+color: white;
+border: 1px solid #c82125;
+padding: 8px 25px;
+border-radius: 50px;
+cursor: pointer;
+font-family: "Poppins", sans-serif;
+transition: 0.3s;
+}
+
+.signin:hover{
+  background-color: #a62527;
+  color: white;
+}
+
