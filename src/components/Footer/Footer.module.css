@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Lavishly+Yours&family=Outfit:wght@100..900&family=Parisienne&family=Playwrite+DE+VA+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
 .footer {
     color: #d9d9d9;
     background-color: #323232;
@@ -15,50 +14,65 @@
     overflow-x: hidden;
 }
 
-.footerContent{
+.footerContent {
     width: 100%;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     gap: 80px;
     max-width: 1400px;
-    
 }
 
-.footerLeft,.footerCenter,.footerRight{
+.footerLeft, .footerCenter, .footerRight {
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 20px;
 }
 
-.footerLeft li,.footerCenter li,.footerRight li{
+.footerLeft li, .footerCenter li, .footerRight li {
     list-style: none;
     margin-bottom: 10px;
     font-family: "Poppins", sans-serif;
     cursor: pointer;
 }
 
-.footerCenter h2,.footerRight h2{
+.footerCenter h2, .footerRight h2 {
     color: white;
     margin-top: 20px;
 }
-.logo{
+
+.logo {
     color: #c82125;
     font-size: 50px;
 }
-.text{
-font-family: "Poppins", sans-serif;
+
+.text {
+    font-family: "Poppins", sans-serif;
 }
-.socialIcons img{
+
+.socialIcons img {
     width: 40px;
     margin-right: 15px;
 }
 
-.footer hr{
-  width: 100%;
-  height: 2px;
-  margin: 20px 0;
-  background-color: gray;
-  border: none;
-  border-radius: 50px;
+.footer hr {
+    width: 100%;
+    height: 2px;
+    margin: 20px 0;
+    background-color: gray;
+    border: none;
+    border-radius: 50px;
+}
+
+/* Media Queries */
+@media (max-width: 750px) {
+    .footerContent {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .copyright {
+        text-align: center;
+    }
 }
