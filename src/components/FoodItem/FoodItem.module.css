@@ -87,3 +87,18 @@
 .foodItemCounter img{
     width: 30px;
 }
+
+@media (max-width: 480px) {
+.rating{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 10px;
+    }
+
+.rating p {
+        font-size: 18px;
+        font-weight: 500;
+        font-family: "Poppins", sans-serif;
+    }
+}

@@ -73,3 +73,45 @@ transition: 0.3s;
   color: white;
 }
 
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .navList {
+    gap: 15px;
+    font-size: 16px;
+  }
+
+  .signin {
+    font-size: 14px;
+    padding: 6px 20px;
+  }
+}
+
+@media (max-width: 790px) {
+ 
+  .navList {
+    display: none;
+  }
+ 
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 35px;
+  }
+  .navIcons {
+    gap: 10px;
+  }
+
+  .signin {
+    font-size: 12px;
+    padding: 5px 15px;
+  }
+
+  .cartIcon .dot {
+    min-width: 6px;
+    min-height: 6px;
+    top: -6px;
+    right: -6px;
+  }
+}

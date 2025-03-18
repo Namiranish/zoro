@@ -5,6 +5,7 @@ import Nav from './components/Navbar/Nav';
 import Cart from './pages/Cart/Cart';
 import Home from './pages/Home/Home';
 import PlaceOrder from './pages/placeOrder/PlaceOrder';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
           <Route path="/order" element={<PlaceOrder/>} />
         </Routes>
       </div>
+      
+      <Footer/>
     </>
   );
 }

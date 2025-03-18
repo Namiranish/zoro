@@ -1,21 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Lavishly+Yours&family=Outfit:wght@100..900&family=Parisienne&family=Playwrite+DE+VA+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-.foodDisplay{
+.foodDisplay {
     margin-top: 30px;
 }
 
-.foodDisplay h2{
+.foodDisplay h2 {
     font-size: 28px;
     font-weight: 600;
     text-align: center;
     font-family: "Poppins", sans-serif;
 }
 
-.foodDisplayList{
+.foodDisplayList {
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     margin-top: 30px;
     gap: 30px;
     row-gap: 50px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .foodDisplay {
+        padding: 0 10px;
+    }
+
+    .foodDisplay h2 {
+        font-size: 22px;
+    }
+
+    .foodDisplayList {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .foodDisplay h2 {
+        font-size: 20px;
+    }
+
+    .foodDisplayList {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+    }
 }

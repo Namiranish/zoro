@@ -15,6 +15,7 @@ const Nav = () => {
         <div className={styles.navList}>
             <li onClick={()=> setMenu("home")} className={menu=="home"? styles.active : ""}>Home</li>
             <li onClick={()=> setMenu("menu")} className={menu==="menu"? styles.active : ""}>Menu</li>
+            <li onClick={()=> setMenu("review")} className={menu==="review"? styles.active : ""}>Review</li>
             <li onClick={()=> setMenu("contactUs")} className={menu==="contactUs"? styles.active : ""}>Contact Us</li>
         </div>
 

@@ -56,3 +56,92 @@
     border-radius: 50px;
     font-family: "Poppins", sans-serif;
 }
+
+
+/* Responsive Design */
+@media (max-width: 1525px) {
+.heroContent{
+    gap: 1vw;
+}
+.heroContent h2{
+    font-size: 50px;
+    line-height: 60px;
+}
+.heroContent p {
+    font-size: 15px;
+}
+.viewMenu{
+    padding: 10px 15px;
+}
+}
+
+@media (max-width: 1200px) {
+    .heroHeader {
+        height: 40vw;
+        padding: 7vw;
+    }
+
+    .heroContent {
+        max-width: 60%;
+    }
+
+    .heroContent h2 {
+        font-size: 5vw;
+        line-height: 6vw;
+    }
+
+    .heroContent p {
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 680px) {
+    .heroHeader {
+        height: 50vw;
+        padding: 8vw;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .heroContent {
+        max-width: 80%;
+        align-items: center;
+    }
+
+    .heroContent h2 {
+        font-size: 35px;
+        margin-bottom: 5px;
+    }
+
+    .heroContent p {
+        font-size: 2vw;
+        margin-bottom: 5px;
+    }
+
+    .viewMenu {
+        padding: 2vw 4vw;
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 570px) {
+    .heroContent {
+        max-width: 80%;
+        align-items: center;
+    }
+
+    .heroContent h2 {
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+
+    .heroContent p {
+        font-size: 2vw;
+        margin-bottom: 5px;
+    }
+
+    .viewMenu {
+        padding: 2vw 4vw;
+        font-size: 2vw;
+    }
+}
