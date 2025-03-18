@@ -18,21 +18,32 @@
     max-width: 50%;
     bottom: 12%;
     left: 6vw;
-    animation: fadeIn 3s forwards; 
+    animation: fadeIn 3s ; 
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .heroContent h2{
     font-weight: 500;
     color: black;
     font-size: 60px;
-    line-height: 90px;
+    line-height: 80px;
     font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
 }
 
 .heroContent p{
     color: black;
     font-size: 18px;
     font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
 }
 
 .viewMenu{
