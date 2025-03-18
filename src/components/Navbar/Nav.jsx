@@ -1,19 +1,20 @@
-import React, { useState } from 'react'
+import React, { useState} from 'react'
 import styles from './Nav.module.css'
 import { FaShoppingCart } from 'react-icons/fa'; 
 import { FaUser } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
-const Nav = () => {
+const Nav = ({setShowLogin}) => {
 
   const [menu,setMenu] = useState("home");
 
   return (
     <>
     <header>
-        <h1 className = {styles.logo}>ZORO</h1>
+        <Link to ="/"><h1 className = {styles.logo}>ZORO</h1></Link>
         
         <div className={styles.navList}>
-            <li onClick={()=> setMenu("home")} className={menu=="home"? styles.active : ""}>Home</li>
+        <Link to ="/"><li onClick={()=> setMenu("home")} className={menu=="home"? styles.active : ""}>Home</li></Link>
             <li onClick={()=> setMenu("menu")} className={menu==="menu"? styles.active : ""}>Menu</li>
             <li onClick={()=> setMenu("review")} className={menu==="review"? styles.active : ""}>Review</li>
             <li onClick={()=> setMenu("contactUs")} className={menu==="contactUs"? styles.active : ""}>Contact Us</li>
@@ -24,11 +25,11 @@ const Nav = () => {
             <FaUser size={25} color="black" />
 
             <div className={styles.cartIcon}>
-            <FaShoppingCart size={25} color="black" />
+            <Link to = "/cart"><FaShoppingCart size={25} color="black" /></Link>
             <div className={styles.dot}></div>
             </div>
             
-            <button className={styles.signin}>Sign in</button>
+            <button onClick={()=>setShowLogin(true)} className={styles.signin}>Sign in</button>
         </div>
     </header>
     </>
