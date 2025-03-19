@@ -1,0 +1,25 @@
+.endContainer{
+    display: flex;
+}
+
+.ending{
+    margin-top: 300px;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ending p{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.ending span{
+    color: #c82125;
+}
+
+.endImg{
+    width: 500px;
+    margin-top: 150px;
+    height: 300px;
+}

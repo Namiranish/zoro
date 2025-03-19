@@ -13,7 +13,7 @@ const Nav = ({setShowLogin}) => {
 
   return (
     <>
-    <header>
+    <header id='nav'>
         <Link to ="/"><h1 className = {styles.logo}>ZORO</h1></Link>
         
         <div className={styles.navList}>

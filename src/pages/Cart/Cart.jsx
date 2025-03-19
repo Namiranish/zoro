@@ -43,21 +43,21 @@ const Cart = () => {
          {/* //total amout  */}
     <div className={styles.cartBottom}>
       <div className={styles.cartTotal}>
-          <h2>Cart Totals</h2>
+          <h2 className={styles.carttxt}>Cart Totals</h2>
           <div>
             <div className={styles.cartTotalDetails}>
-              <p>Subtotal</p>
+              <p className={styles.carttxt} >Subtotal</p>
               <p>₹{getTotalCartAmount()}</p>
             </div>
             <hr />
             <div className={styles.cartTotalDetails}>
-                <p>Delivery Fee</p>
-                <p>₹{29}</p>
+                <p className={styles.carttxt} >Delivery Fee</p>
+                <p>₹{getTotalCartAmount()===0?0:29}</p>
             </div>
             <hr />
             <div className={styles.cartTotalDetails}>
-                <b>Total</b>
-                <b>₹{getTotalCartAmount()+29}</b>
+                <b className={styles.carttxt} >Total</b>
+                <b>₹{getTotalCartAmount()===0?0:getTotalCartAmount()+29}</b>
             </div>
           </div>
             <Link to = '/order'><button>CHECKOUT</button></Link>

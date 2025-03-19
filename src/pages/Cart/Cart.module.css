@@ -3,15 +3,18 @@
 
 .cart{
     margin-top: 150px;   
+
+}
+.carttxt{
     font-family: "Poppins", sans-serif; 
 }
-
 .cartTitle{
     display: grid;
     grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
     align-items: center;
     color: gray;
     font-size: max(1vw,12px);
+    font-family: "Poppins", sans-serif; 
     
 }
 
@@ -71,6 +74,7 @@
     padding: 12px 0px;
     border-radius: 4px;
     cursor: pointer;
+    font-family: "Poppins", sans-serif; 
 }
 
 .promocode{
@@ -88,6 +92,7 @@
     align-items: center;
     background-color: #eaeaea;
     border-radius: 4px;
+    font-family: "Poppins", sans-serif; 
 }
 
 .promoInput input{
@@ -95,6 +100,7 @@
     border: none;
     outline: none;
     padding: 10px;
+    font-family: "Poppins", sans-serif; 
 }
 
 .promoInput button{
@@ -104,6 +110,7 @@
     border: none;
     color: white;
     border-radius: 4px;
+    font-family: "Poppins", sans-serif; 
 }
 
 @media (max-width: 750px){
