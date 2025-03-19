@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer';
 import { useState } from 'react';
 import Login from './components/LoginPopUp/Login';
 import Ordered from './pages/placeOrder/Ordered';
+import Review from './components/Review/Review';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="/cart" element={<Cart/>} />
           <Route path="/order" element={<PlaceOrder/>} />
           <Route path="/end" element={<Ordered/>}/>
+          <Route path="/review" element={<Review/>}/>
         </Routes>
       </div>
       

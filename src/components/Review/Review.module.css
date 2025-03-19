@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Lavishly+Yours&family=Outfit:wght@100..900&family=Parisienne&family=Playwrite+DE+VA+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    margin-top: 150px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Poppins", sans-serif;
+}
+
+.heading {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input, .textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.textarea {
+    height: 80px;
+    resize: none;
+}
+
+.rating {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.filledStar, .emptyStar {
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filledStar {
+    color: #c82125;;
+}
+
+.emptyStar {
+    color: #ccc;
+}
+
+.button {
+    background: #c82125;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover {
+    background: #ae1c1f;;
+}
+
+.reviewList {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.reviewCard {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.stars {
+    color: #c82125;
+    font-size: 25px;
+}

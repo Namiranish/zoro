@@ -19,7 +19,7 @@ const Nav = ({setShowLogin}) => {
         <div className={styles.navList}>
         <Link to ="/"><li onClick={()=> setMenu("home")} className={menu=="home"? styles.active : ""}>Home</li></Link>
             <li onClick={()=> setMenu("menu")} className={menu==="menu"? styles.active : ""}><a href='#exploreMenu'>Menu</a></li>
-            <li onClick={()=> setMenu("review")} className={menu==="review"? styles.active : ""}>Review</li>
+            <Link to = '/review'><li onClick={()=> setMenu("review")} className={menu==="review"? styles.active : ""}>Review</li></Link>
             <li onClick={()=> setMenu("contactUs")} className={menu==="contactUs"? styles.active : ""}><a href='https://www.linkedin.com/in/namira-anis/' target='blank'>Contact Us</a></li>
         </div>
 
