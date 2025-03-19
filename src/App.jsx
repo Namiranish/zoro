@@ -8,6 +8,7 @@ import PlaceOrder from './pages/placeOrder/PlaceOrder';
 import Footer from './components/Footer/Footer';
 import { useState } from 'react';
 import Login from './components/LoginPopUp/Login';
+import Ordered from './pages/placeOrder/Ordered';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/cart" element={<Cart/>} />
           <Route path="/order" element={<PlaceOrder/>} />
+          <Route path="/end" element={<Ordered/>}/>
         </Routes>
       </div>
       

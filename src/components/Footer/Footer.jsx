@@ -3,7 +3,7 @@ import styles from './Footer.module.css'
 import { assets } from '../../assets/assets'
 const Footer = () => {
   return(
-    <div className={styles.footer} id={styles.footer}>
+    <div className={styles.footer} id="footer">
         <div className={styles.footerContent}>
 
         {/* //left part of the footer */}

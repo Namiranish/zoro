@@ -8,6 +8,7 @@
     background-position: center; 
     position: relative;
     border-radius: 15px;
+    margin-top: 150px;
 }
 
 .heroContent {
@@ -126,6 +127,9 @@
 }
 
 @media (max-width: 570px) {
+    .heroHeader {
+        margin-top: 120px;
+    }
     .heroContent {
         max-width: 80%;
         align-items: center;

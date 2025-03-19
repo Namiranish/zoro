@@ -1,12 +1,15 @@
-import React, { useState} from 'react'
+import React, { useContext, useState} from 'react'
 import styles from './Nav.module.css'
 import { FaShoppingCart } from 'react-icons/fa'; 
 import { FaUser } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { StoreContext } from '../../context/StoreContext';
 
 const Nav = ({setShowLogin}) => {
 
   const [menu,setMenu] = useState("home");
+
+  const {getTotalCartAmount} = useContext(StoreContext);
 
   return (
     <>
@@ -15,9 +18,9 @@ const Nav = ({setShowLogin}) => {
         
         <div className={styles.navList}>
         <Link to ="/"><li onClick={()=> setMenu("home")} className={menu=="home"? styles.active : ""}>Home</li></Link>
-            <li onClick={()=> setMenu("menu")} className={menu==="menu"? styles.active : ""}>Menu</li>
+            <li onClick={()=> setMenu("menu")} className={menu==="menu"? styles.active : ""}><a href='#exploreMenu'>Menu</a></li>
             <li onClick={()=> setMenu("review")} className={menu==="review"? styles.active : ""}>Review</li>
-            <li onClick={()=> setMenu("contactUs")} className={menu==="contactUs"? styles.active : ""}>Contact Us</li>
+            <li onClick={()=> setMenu("contactUs")} className={menu==="contactUs"? styles.active : ""}><a href='https://www.linkedin.com/in/namira-anis/' target='blank'>Contact Us</a></li>
         </div>
 
         <div className={styles.navIcons}>
@@ -26,7 +29,7 @@ const Nav = ({setShowLogin}) => {
 
             <div className={styles.cartIcon}>
             <Link to = "/cart"><FaShoppingCart size={25} color="black" /></Link>
-            <div className={styles.dot}></div>
+            <div className={getTotalCartAmount() === 0?"":styles.dot}></div>
             </div>
             
             <button onClick={()=>setShowLogin(true)} className={styles.signin}>Sign in</button>
