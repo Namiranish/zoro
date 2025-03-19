@@ -7,8 +7,8 @@ Welcome to **ZORO**, a seamless and user-friendly food delivery app that brings 
 ![Cover Image](/src/assets/Screenshot%202025-03-20%20042718.png)  
   
 ## 🌍 Hosted Link  
-🚀 **Live Demo:** [ZORO - Online Food Delivery App](https://your-hosted-link.com)  
-*(Replace `https://your-hosted-link.com` with your actual deployed URL.)*  
+🚀 **Live Demo:** [ZORO - Online Food Delivery App](https://zoro-pearl.vercel.app/)  
+ 
 
 
 ## ⭐ Features  
