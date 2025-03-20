@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import styles from './Nav.module.css';
 import { FaShoppingCart } from 'react-icons/fa'; 
 import { Link } from 'react-router-dom';
+import { FaUtensils } from "react-icons/fa";
 import { StoreContext } from '../../context/StoreContext';
 
 const Nav = ({ setShowLogin }) => {
@@ -47,7 +48,11 @@ const Nav = ({ setShowLogin }) => {
         </div>
 
         <div className={styles.navIcons}>
+          <div className={styles.fork}>
+              <Link to='./recipe'><FaUtensils  size={25} color="black" /></Link>
+          </div>
           <div className={styles.cartIcon}>
+          
             <Link to="/cart">
               <FaShoppingCart size={25} color="black" />
             </Link>

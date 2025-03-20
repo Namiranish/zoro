@@ -48,7 +48,10 @@ header {
   align-items: center;
   gap: 20px;
 }
-
+.fork{
+  position: relative;
+  top: 3px;
+}
 .cartIcon{
   position: relative;
   top: 3px;

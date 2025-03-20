@@ -10,6 +10,7 @@ import { useState } from 'react';
 import Login from './components/LoginPopUp/Login';
 import Ordered from './pages/placeOrder/Ordered';
 import Review from './components/Review/Review';
+import Recipe from './components/Recipe/Recipe';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/order" element={<PlaceOrder/>} />
           <Route path="/end" element={<Ordered/>}/>
           <Route path="/review" element={<Review/>}/>
+          <Route path="/recipe" element={<Recipe/>}/>
         </Routes>
       </div>
       

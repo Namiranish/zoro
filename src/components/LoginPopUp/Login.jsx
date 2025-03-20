@@ -20,8 +20,6 @@ const Login = ({ setShowLogin }) => {
       }));
 
       console.log("User logged in:", user.displayName);
-
-      // Reload the page to reflect changes
       window.location.reload();
 
     } catch (err) {
