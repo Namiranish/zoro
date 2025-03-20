@@ -21,6 +21,21 @@ Welcome to **ZORO**, a seamless and user-friendly food delivery app that brings 
 ✅ **Review Section** – Users can leave reviews and rate dishes.  
 ✅ **Reviews Stored in Local Storage** – Reviews persist even after a page refresh.  
 ✅ **Context API for State Management** – Efficiently handles global state like cart, menu, and reviews.  
+✅ **Google Login with Firebase** – Secure and hassle-free authentication.  
+✅ **AI-Powered Recipe Search** – Get detailed recipes using **Gemini API**.  
+
+## 🔐 Firebase Authentication - Google Login  
+
+To enhance security and provide seamless access, ZORO integrates **Google Login** using **Firebase Authentication**.  
+
+## 🔍 Recipe Search with Gemini API Integration  
+
+ZORO now includes an **AI-powered Recipe Search** feature, integrating **Google Gemini API** to enhance user experience by providing detailed recipe insights for each dish.  
+
+## 🗂️ Local Storage Integration  
+
+ZORO leverages **Local Storage** to enhance user experience by preserving essential data, ensuring a smooth and seamless interaction even after a page refresh.  
+
 
 ## 💻 Tech Used  
 This project is built using:  
