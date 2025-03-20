@@ -78,7 +78,31 @@ transition: 0.3s;
   background-color: #a62527;
   color: white;
 }
+.user{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.user span{
+  font-size: 20px;
+}
+.logout{
+background: #c82125;
+font-size: 14px;
+color: white;
+border: 1px solid #c82125;
+padding: 8px 18px;
+border-radius: 50px;
+cursor: pointer;
+font-family: "Poppins", sans-serif;
+transition: 0.3s;
+}
 
+.logout:hover{
+  background-color: #a62527;
+  color: white;
+}
 
 /* Responsive Design */
 @media (max-width: 1024px) {
@@ -95,12 +119,19 @@ transition: 0.3s;
 
 @media (max-width: 790px) {
  
+  .user span{
+    font-size: 14px;
+  }
+ 
+}
+
+@media (max-width: 550px) {
+ 
   .navList {
     display: none;
   }
  
 }
-
 @media (max-width: 480px) {
   .logo {
     font-size: 35px;

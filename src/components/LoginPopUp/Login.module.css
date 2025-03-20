@@ -5,8 +5,9 @@
     z-index: 1;
     width: 100%;
     height: 100%;
-    background-color: #00000090;
+    background-color: #0000009c;
     display: grid;
+    margin-bottom: 250px;
 }
 
 .loginContainer{
@@ -21,6 +22,7 @@
     border-radius: 8px;
     font-size: 14px;
     animation: fadeIn 0.5s;
+    margin-bottom: 150px;
 }
 
 @keyframes fadeIn {
@@ -93,4 +95,27 @@
 .login p {
     font-size: 13px;
     font-family: "Poppins", sans-serif;
+}
+
+.google img{
+    width: 20px;
+    height: 20px;
+}
+
+.google{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.google button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #115bd284;
+    gap: 5px;
+}
+
+.google button:hover{
+    background-color: #0b57d0;
 }
